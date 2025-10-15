@@ -4,6 +4,13 @@
 // SPDX-License-Identifier: Apache-2.0
 //
 
+soong_namespace {
+    imports: [
+        "hardware/google/interfaces",
+        "hardware/google/pixel",
+    ],
+}
+
 cc_binary {
     name: "android.hardware.usb.gadget-service.mediatek",
     relative_install_path: "hw",
